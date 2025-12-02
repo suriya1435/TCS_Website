@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chennai Silks</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="image/src/Screenshot 2025-11-22 155527.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+	   (function(){
+		  emailjs.init({
+			publicKey: "rhZtsYtL-chz0Ezcm",
+		  });
+	   })();
+	</script>
+	<script src="script.js"></script>
+	
+<body>
+	
+	
+	<header>
+	<div class="logo">
+		<img src="image\src\Screenshot 2025-11-22 155527.png" >
+		<span>The Chennai Silks</span>
+	</div>
+	<nav>
+		<a href="index.html">Home</a>
+        <a href="abouus.html">About Us</a>
+        <a href="company.html">Companies</a>
+		<a href ="latest.html">Latest News</a>
+			
+		<a href ="files\csr-policy-spacetextiles.pdf">CSR Policy</a>
+        <a href="contact.html">Contact Us</a>
+	</nav>
+</header>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p class="subtext">Feel free to reach out to us. We are happy to help!</p>
+
+        <div class="contact-box">
+
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id ="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id ="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input type="text" id="phone_number"placeholder="Enter your phone number">
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea id ="message" rows="5" placeholder="Write your message..." required></textarea>
+                </div>
+                
+                <button type="button" onclick="sendMail()">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><strong>📍 Address:</strong> Crescent Inovation and Incubation Council, GST Road, Vandalur Chennai-60048.</p>
+                <p><strong>📞 Phone:</strong> +91 8838751960</p>
+                <p><strong>✉ Email:</strong> suriyav040@gmail.com</p>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.560339258337!2d80.0816377745451!3d12.871649217062789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f791aeb9fff3%3A0x92b8e9d70ae5880b!2sCrescent%20Innovation%20%26%20Incubation%20Council%20(CIIC)!5e0!3m2!1sen!2sin!4v1764465457235!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="image\src\Screenshot 2025-11-22 155527.png" alt="The Chennai Silks">
+            <p>The Chennai Silks</p>
+        </div>
+        <div class="footer-col">
+            <h3>Our Companies</h3>
+            <ul>
+                <li><a href="https://apdeops.com/">The Chennai Silks</a></li>
+                <li><a href ="#">Sree Kumaran Thangamaligai</a></li>
+                <li><a href = "#">Space Energy Division</a></li>
+                <li><a href="#">The Chennai Super Bazaar</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Our Companies</h3>
+            <ul>
+                <li><a href="#">SCM Textile Spinners</a></li>
+                <li><a href="#">Vikkys</a></li>
+                <li><a href="#">Sri Nachammal Vidyavani</a></li>
+                <li><a href="#">Sri Nachakids Play School</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Crescent Inovation and Incubation Council, GST Road, Vandalur Chennai-60048.</li>
+                <li>Phone: 8838751960</li>
+                <li>Email: support@apdeops.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2025 Apdeops Technology. All Rights Reserved.
+    </div>
+</footer>
+</body>
+</html>
