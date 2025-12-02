@@ -556,7 +556,6 @@ header nav a:hover{
     }
 }
 
-/* FOOTER */
 .footer {
     background: #1d1d26;
     color: #e7e7e7;
@@ -591,13 +590,14 @@ header nav a:hover{
     color: #c5c5c5;
 }
 
-.footer-col ul li a{
-    margin-left:20px;
-	color:white;
-	font-weight:200;
-	transition:0.5;
-	text-decoration: none;
+.footer-col ul li a {
+    margin-left: 20px;
+    color: white;
+    font-weight: 200;
+    transition: 0.5s;
+    text-decoration: none;
 }
+
 .footer-bottom {
     text-align: center;
     padding: 20px 0 0;
@@ -606,7 +606,6 @@ header nav a:hover{
     font-size: 14px;
     color: #888;
 }
-
 /* ABOUT SECTION MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     
