@@ -5,9 +5,30 @@
 	font-family:'Poppins', sans-serif;
 }
 
-body{
-	background-color: white;
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
+
+/* MOBILE MENU */
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav.show {
+    display: block;
+}
+
 header{
 	width:100%;
 	padding:10px 50px;
@@ -398,35 +419,43 @@ header nav a:hover{
     color: #888;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-    .welcome-section, .space-section, .company-box, .future-focus {
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #020824;
+        width: 100%;
+        display: none;
         flex-direction: column;
+        padding: 20px;
+        text-align: center;
     }
-    .mission-box, .welcome-text, .space-video, .space-text, .company-text, .company-image, .future-left, .future-right {
-        flex: 1 1 100%;
+
+    .menu-btn {
+        display: block;
     }
-    .stats {
-        flex-wrap: wrap;
-        gap: 20px;
+
+    .welcome-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .strength, .brands, .future-focus, .company-section {
+        padding: 30px 20px;
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
     }
 }
-
-/* Desktop Default */
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-/* Mobile Fix */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-  img {
-    width: 100%;
-  }
-}
-
