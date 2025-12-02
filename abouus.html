@@ -4,75 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Chennai Silks</title>
+
     <link rel="stylesheet" href="aboutus.css" />
     <link rel="icon" type="image/png" href="image/src/Screenshot 2025-11-22 155527.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+<!-- HEADER -->
 <header>
-	<div class="logo">
-		<img src="image\src\Screenshot 2025-11-22 155527.png" >
-		<span>The Chennai Silks</span>
-	</div>
-	<nav>
-		<a href="index.html">Home</a>
+    <div class="logo">
+        <img src="image/src/Screenshot 2025-11-22 155527.png" alt="The Chennai Silks Logo">
+        <span>The Chennai Silks</span>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <a href="index.html">Home</a>
         <a href="abouus.html">About Us</a>
         <a href="company.html">Companies</a>
-		<a href ="latest.html">Latest News</a>
-			
-		<a href ="files\csr-policy-spacetextiles.pdf">CSR Policy</a>
+        <a href="latest.html">Latest News</a>
+        <a href="files/csr-policy-spacetextiles.pdf">CSR Policy</a>
         <a href="contact.html">Contact Us</a>
-	</nav>
+    </nav>
 </header>
 
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
+
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+</script>
+
+
+
+<!-- ABOUT SECTION -->
 <section class="about-section">
-	<div class="about-box">
-		<div class = "about-text">
-			<h2>About US</h2>
-				<p>
-					The Chennai Silks is fashioned by unlimited possibilities! Founded in 2006, the The Chennai Silks . prospered into multiple commercial sectors. Beginning with Textiles and Spinning, the . stretched its factions towards large scale arenas like Exquisite Jewelry, Lifestyle Retailing and World Class Education. 
-					The Chennai Silks . had a clear purpose and a highly insightful vision of providing value-based education when it stepped into the Education sector. 
-					The . recently made its way into Energy Production and within the shortest time, the entire . operations are off grid and self-sustained using Green energy.
-					With a workforce of over 3000 employees the . has consistently grown over the past few decades and is constantly reaching out to new horizons. “The Chennai Silks” and “Sree Kumaran Thangamaligai” are some of the most celebrated brands under the The Chennai Silks . that has reached the hearts of many people across the country.
-				</p>
-		</div>
-		<div class="about-image">
-			<img src="image\src\Screenshot 2025-11-22 155527.png" alt="The Chennai Silks">
-		</div>
-	</div>
-	
+    <div class="about-box">
+
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+                The Chennai Silks is fashioned by unlimited possibilities! Founded in 2006,
+                the group has grown into multiple commercial sectors including Textiles,
+                Jewelry, Retailing, Education, and Green Energy.
+                With a workforce of over 3000 employees, the brand continues to expand with
+                strong values and innovation.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="image/src/Screenshot 2025-11-22 155527.png" alt="The Chennai Silks">
+        </div>
+
+    </div>
 </section>
 
+
+<!-- OWNER SECTION -->
 <section class="owner-section">
     <div class="owner-box">
+
         <div class="owner-image">
-            <img src="image/src/owner.png" />
+            <img src="image/src/owner.png">
         </div>
+
         <div class="owner-details">
             <h3>THIRU. K. VINAYAKAM<br>FOUNDER CHAIRMAN – The Chennai Silks</h3>
             <p>
-                From a humble beginning to building a vast empire, Mr.K.Vinayakam fulfilled the magnificent vision of his father Mr. A. Kulandaivel Mudaliyar, Founder of The Chennai Silks Group. Under Mr.K.Vinayakam’s dynamic leadership, the textile business that had a modest start has grown into a business conglomerate which is now into various domains. He carries the flame which started from the spark that is his father’s vision, to spread the light and conquer more boundaries. His exceptional wisdom made the textile kingdom, “The Chennai Silks” and the jewelry wing of Space Group, “Sree Kumaran Thangamaligai” to emerge as a brand icons. He epitomizes the dauntless entrepreneurial spirit and always marches on, with the group's vision to change the destiny of our nation.
-
-With four decades of experience Mr.Vinayakam, the enterprising entrepreneur is the Chairman and Managing Director of Space Textiles Private limited. He is also the Managing Trustee of AKV Foundation and Sri Nachammal Vidyavani CBSE School. He is a proud recipient of many awards and accolades and now he is currently the Vice-Chairman of The Southern Indian Mills’ Association (SIMA).
+                Mr. K. Vinayakam transformed a modest textile business into a strong business
+                conglomerate. Under his leadership, The Chennai Silks and Sree Kumaran
+                Thangamaligai have become iconic brands.
             </p>
 
             <h3>THIRU. V. VIKRAM NARAYEN<br>EXECUTIVE DIRECTOR – The Chennai Silks</h3>
             <p>
-                As one would expect, the family perpetuates its tradition of quality, innovation and goodwill through Mr. Vikram, son of Mr. Vinayakam. He completed his BTech from PSG College of Technology and went on to pursue his higher studies from the University of Westminster. Today he develops innovative business strategies that survive the tests of time and changing trends.Space Group runs the AKV Foundation and Sri Nachammal Vidyavani School that was passionately opened in the name of his Grandmother. He carries an amazing dexterity in marketing with which he resourcefully associates & partners with successful brands and employees remarkable strategies.
+                Mr. Vikram Narayen continues the family tradition of quality and innovation.
+                With strong business acumen, he leads brand partnerships and strategic growth.
             </p>
         </div>
+
     </div>
 </section>
 
-<section class ="achievement">
-	<div class="achivement-box">
-		<div Class="achievemet-right">
-			
+
+<!-- ACHIEVEMENTS -->
 <section class="achievement-section">
+
     <div class="achievement-container">
 
-       
         <div class="achievement-left">
             <h2>ACHIEVEMENTS</h2>
 
@@ -82,7 +107,8 @@ With four decades of experience Mr.Vinayakam, the enterprising entrepreneur is t
                 <div class="ach-content">
                     <div class="ach-quote">❝</div>
                     <p id="ach-text">
-                        Funtime have introduced in The Chennai Silks Hosur to make it a Complete Family Shopping Destination.
+                        Funtime was introduced in The Chennai Silks Hosur to make it a
+                        complete family shopping destination.
                     </p>
 
                     <div class="ach-divider"></div>
@@ -101,10 +127,8 @@ With four decades of experience Mr.Vinayakam, the enterprising entrepreneur is t
             </div>
         </div>
 
-        
         <div class="achievement-right">
             <h2>DIRECTORS</h2>
-
             <ul>
                 <li>→ Mr. K. Vinayakam<br><span>Founder Chairman – SPACE Group</span></li>
                 <li>→ Mr. V. Vikram Narayen<br><span>Executive Director – SPACE Group</span></li>
@@ -116,93 +140,55 @@ With four decades of experience Mr.Vinayakam, the enterprising entrepreneur is t
 </section>
 
 
-
-<script>
-const achData = [
-    {
-        text: "Funtime have introduced in The Chennai Silks Hosur to make it a Complete Family Shopping Destination.",
-        year: "2018"
-    },
-    {
-        text: "Launched new family entertainment experiences for better customer engagement.",
-        year: "2019"
-    },
-    {
-        text: "Expanded retail floors and modern digital shopping features.",
-        year: "2020"
-    }
-];
-
-let i = 0;
-
-function loadAch(){
-    document.getElementById("ach-text").innerText = achData[i].text;
-    document.getElementById("ach-year").innerText = achData[i].year;
-
-    document.querySelectorAll(".dot").forEach((d, idx)=>{
-        d.classList.toggle("active", idx === i);
-    });
-}
-
-document.getElementById("ach-next").onclick = () => {
-    i = (i + 1) % achData.length;
-    loadAch();
-};
-
-document.getElementById("ach-prev").onclick = () => {
-    i = (i - 1 + achData.length) % achData.length;
-    loadAch();
-};
-</script>
-
+<!-- EXPERIENCE -->
 <section class="experience-section">
     <div class="container">
-        <h2>30+ YEARS OF EXPERIENCES</h2>
+
+        <h2>30+ YEARS OF EXPERIENCE</h2>
         <p class="subtitle">
-            A renowned industrial group offering the best quality products for over four decades 
-            with a focused entrepreneurial spirit.
+            A renowned industrial group offering quality products for decades.
         </p>
 
         <div class="experience-grid">
+
             <div class="feature-box">
-                <img src="image/src/quality.png" alt="Quality Services" class="icon">
+                <img src="image/src/quality.png" class="icon">
                 <h3>Quality Services</h3>
                 <p>
-                    A team of professionals steered by an enterprising management delivers quality 
-                    products with the focus to reach customer’s satisfaction.
+                    A team of professionals delivering high-quality products and customer satisfaction.
                 </p>
             </div>
 
             <div class="feature-box">
-                <img src="image/src/idea.png" alt="Valuable Ideas" class="icon">
+                <img src="image/src/idea.png" class="icon">
                 <h3>Valuable Ideas</h3>
                 <p>
-                    Built with more than hundreds of in-house brands delivering services in various 
-                    fields with the aim to empower the future of many people.
+                    Built with in-house brands delivering services with a futuristic vision.
                 </p>
             </div>
 
             <div class="feature-box">
-                <img src="image/src/budget.png" alt="Budget Friendly "class="icon">
+                <img src="image/src/budget.png" class="icon">
                 <h3>Budget Friendly</h3>
                 <p>
-                    Assures the best value for every product with quality and process control 
-                    transactions. We work with business ethics to serve social values.
+                    Ensuring the best value through ethical business practices.
                 </p>
             </div>
 
             <div class="feature-box">
-                <img src="image/src/hand.png" alt="Trusted by Peoples" class="icon">
-                <h3>Trusted by Peoples</h3>
+                <img src="image/src/hand.png" class="icon">
+                <h3>Trusted by People</h3>
                 <p>
-                    We create unlimited possibilities and opportunities to serve people with our 
-                    consumer products, education, research & manufacturing.
+                    Empowering communities through education, research, and manufacturing.
                 </p>
             </div>
+
         </div>
     </div>
 </section>
 
+
+<!-- KEY RESOURCES -->
 <section class="key-resources">
     <h2>Key Resources</h2>
     <div class="underline"></div>
@@ -210,25 +196,23 @@ document.getElementById("ach-prev").onclick = () => {
     <div class="kr-container">
 
         <div class="kr-card">
-            <img src="person1.jpg" class="kr-img" />
+            <img src="person1.jpg" class="kr-img">
             <h3>Mr. Sudhakar. P</h3>
             <p class="role">CEO</p>
             <div class="line"></div>
             <p class="company">The Chennai Silks</p>
         </div>
 
-        
         <div class="kr-card">
-            <img src="person2.jpg" class="kr-img" />
+            <img src="person2.jpg" class="kr-img">
             <h3>Mr. Suriya V</h3>
             <p class="role">GM</p>
             <div class="line"></div>
             <p class="company">The Chennai Silks</p>
         </div>
 
-       
         <div class="kr-card">
-            <img src="person3.jpg" class="kr-img" />
+            <img src="person3.jpg" class="kr-img">
             <h3>Mr. Karthick V</h3>
             <p class="role">Relationship Manager</p>
             <div class="line"></div>
@@ -237,74 +221,34 @@ document.getElementById("ach-prev").onclick = () => {
 
     </div>
 </section>
+
+
+<!-- STATS -->
 <section class="stats-section">
     <div class="stats-overlay"></div>
 
     <div class="stats-container">
 
         <div class="stat-box">
-            <img src="" class="stat-icon" />
-            <h2><span class="counter" data-count="2600">0 </span>+</h2>
+            <h2><span class="counter" data-count="2600">0</span>+</h2>
             <p>Employees</p>
         </div>
 
         <div class="stat-box">
-            <img src="" class="stat-icon" />
-            <h2> 2X </h2>
+            <h2>2X</h2>
             <p>Growth</p>
         </div>
 
-    <div class="stat-box">
-        <img src="" class="stat-icon" />
-        <h2><span class="counter" data-count="10">0</span> Lakhs</h2>
-        <p>Customers</p>
-    </div>
+        <div class="stat-box">
+            <h2><span class="counter" data-count="10">0</span> Lakhs</h2>
+            <p>Customers</p>
+        </div>
 
     </div>
 </section>
 
-<script>
-let counters = document.querySelectorAll('.counter');
-let started = false;
 
-function startCounting() {
-    counters.forEach(counter => {
-        let target = +counter.getAttribute('data-count');
-        let speed = 50; 
-
-        let updateCount = () => {
-            let current = +counter.innerText;
-            let increment = Math.ceil(target / 100);
-
-            if (current < target) {
-                counter.innerText = current + increment;
-                setTimeout(updateCount, speed);
-            } else {
-                counter.innerText = target.toLocaleString(); 
-            }
-        };
-
-        updateCount();
-    });
-}
-
-// Trigger only when visible
-let observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting && !started) {
-            startCounting();
-            started = true;
-        }
-    });
-});
-
-observer.observe(document.querySelector('.stats-section'));
-</script>
-
-
-
-
-
+<!-- MILESTONES -->
 <section class="milestone-container">
 
     <h2 class="section-title">Milestones</h2>
@@ -314,57 +258,62 @@ observer.observe(document.querySelector('.stats-section'));
         <div class="timeline-item left">
             <div class="content">
                 <span class="year">2005</span>
-                <p>“THE CHENNAI SILKS COIMBATORE – LAUNCHED” ...</p>
+                <p>“THE CHENNAI SILKS COIMBATORE – LAUNCHED”</p>
             </div>
         </div>
 
         <div class="timeline-item right">
             <div class="content">
                 <span class="year">2000</span>
-                <p>“SPACE GROUP – INSPECTED” ...</p>
+                <p>“SPACE GROUP – INSPECTED”</p>
             </div>
         </div>
 
         <div class="timeline-item left">
             <div class="content">
                 <span class="year">2010</span>
-                <p>“AKV FOUNDATION – INAUGURATED” ...</p>
+                <p>“AKV FOUNDATION – INAUGURATED”</p>
             </div>
         </div>
 
         <div class="timeline-item right">
             <div class="content">
                 <span class="year">2012</span>
-                <p>“SRI NACHAMMAL VIDYALAYA – OPENED” ...</p>
+                <p>“SRI NACHAMMAL VIDYALAYA – OPENED”</p>
             </div>
         </div>
 
         <div class="timeline-item left">
             <div class="content">
                 <span class="year">2015</span>
-                <p>“THE CHENNAI SILKS HOSUR – LAUNCHED” ...</p>
+                <p>“THE CHENNAI SILKS HOSUR – LAUNCHED”</p>
             </div>
         </div>
 
     </div>
 </section>
 
+
 <!-- FOOTER -->
 <footer class="footer">
+
     <div class="footer-container">
+
         <div class="footer-logo">
-            <img src="image\src\Screenshot 2025-11-22 155527.png" alt="The Chennai Silks">
+            <img src="image/src/Screenshot 2025-11-22 155527.png">
             <p>The Chennai Silks</p>
         </div>
+
         <div class="footer-col">
             <h3>Our Companies</h3>
             <ul>
-                <li><a href="https://apdeops.com/">The Chennai Silks</a></li>
-                <li><a href ="#">Sree Kumaran Thangamaligai</a></li>
-                <li><a href = "#">Space Energy Division</a></li>
+                <li><a href="#">The Chennai Silks</a></li>
+                <li><a href="#">Sree Kumaran Thangamaligai</a></li>
+                <li><a href="#">Space Energy Division</a></li>
                 <li><a href="#">The Chennai Super Bazaar</a></li>
             </ul>
         </div>
+
         <div class="footer-col">
             <h3>Our Companies</h3>
             <ul>
@@ -374,22 +323,65 @@ observer.observe(document.querySelector('.stats-section'));
                 <li><a href="#">Sri Nachakids Play School</a></li>
             </ul>
         </div>
+
         <div class="footer-col">
             <h3>Contact Us</h3>
             <ul>
-                <li>Crescent Inovation and Incubation Council, GST Road, Vandalur Chennai-60048.</li>
+                <li>Crescent Innovation & Incubation Council, Chennai-60048</li>
                 <li>Phone: 8838751960</li>
                 <li>Email: support@apdeops.com</li>
             </ul>
         </div>
+
     </div>
+
     <div class="footer-bottom">
         © 2025 Apdeops Technology. All Rights Reserved.
     </div>
+
 </footer>
+
+
+<script>
+/* ACHIEVEMENT SLIDER JS */
+const achData = [
+    { text: "Funtime introduced in The Chennai Silks Hosur to make it a family shopping destination.", year: "2018"},
+    { text: "Launched new entertainment experiences for customer engagement.", year: "2019"},
+    { text: "Expanded retail floors and introduced digital shopping features.", year: "2020"}
+];
+
+let i = 0;
+function loadAch() {
+    document.getElementById("ach-text").innerText = achData[i].text;
+    document.getElementById("ach-year").innerText = achData[i].year;
+    document.querySelectorAll(".dot").forEach((d, idx)=> d.classList.toggle("active", idx===i));
+}
+document.getElementById("ach-next").onclick = () => { i=(i+1)%achData.length; loadAch(); };
+document.getElementById("ach-prev").onclick = () => { i=(i-1+achData.length)%achData.length; loadAch(); };
+
+/* COUNTER */
+let counters=document.querySelectorAll(".counter");
+let started=false;
+function startCounting(){
+    counters.forEach(counter=>{
+        let target=+counter.dataset.count;
+        let update=()=>{
+            let current=+counter.innerText;
+            let inc=Math.ceil(target/100);
+            if(current<target){
+                counter.innerText=current+inc;
+                setTimeout(update,40);
+            }else counter.innerText=target;
+        }; update();
+    });
+}
+let observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting && !started){ started=true; startCounting(); }
+    });
+});
+observer.observe(document.querySelector(".stats-section"));
+</script>
+
 </body>
 </html>
-
-
-
-	

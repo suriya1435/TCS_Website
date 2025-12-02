@@ -420,26 +420,68 @@ header nav a:hover{
 }
 
 @media (max-width: 900px) {
-
+@media (max-width: 768px) {
     header {
-        padding: 15px 20px;
+        padding: 10px 20px;
+        flex-direction: row; /* Keep logo and button on the same line */
+        justify-content: space-between;
+        align-items: center;
+        position: fixed; /* Keep header fixed */
+        width: 100%;
+        top: 0;
+        z-index: 100;
     }
 
+    /* Show hamburger menu button */
+    .menu-btn {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        z-index: 110;
+    }
+
+    /* Hide nav by default */
     nav {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        background: #020824;
-        width: 100%;
         display: none;
         flex-direction: column;
-        padding: 20px;
+        width: 100%;
+        background-color: #020824;
+        position: fixed;
+        top: 60px;  /* Just below the header */
+        left: 0;
+        padding: 10px 0;
+        gap: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        border-top: 1px solid #333;
+        z-index: 105;
+    }
+
+    /* Show nav when toggled */
+    nav.show {
+        display: flex;
+    }
+
+    /* Nav links styling */
+    header nav a {
+        margin: 10px 20px;
+        font-weight: 700;
+        color: white;
+        display: block;
         text-align: center;
     }
 
-    .menu-btn {
-        display: block;
+    /* Logo sizing */
+    .logo img {
+        height: 50px;
+        width: 65px;
     }
+
+    .logo span {
+        font-size: 20px;
+    }
+}
+
 
     .welcome-section {
         flex-direction: column;

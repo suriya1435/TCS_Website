@@ -8,6 +8,22 @@
 body{
 	background-color: white;
 }
+/* MOBILE MENU */
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav.show {
+    display: block;
+}
 header{
 	width:100%;
 	padding:20px 50px;
@@ -591,16 +607,199 @@ header nav a:hover{
     color: #888;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-    .welcome-section, .space-section, .company-box, .future-focus {
-        flex-direction: column;
+/* ABOUT SECTION MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    
+
+    
+    .about-section {
+        padding: 20px 15px;
+        margin-top: 120px; 
     }
-    .mission-box, .welcome-text, .space-video, .space-text, .company-text, .company-image, .future-left, .future-right {
+
+    .about-box {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .about-text, .about-image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-height: 300px;
+        border-radius: 30px;
+    }
+
+    /* Owner Section */
+    .owner-section {
+        padding: 30px 15px;
+    }
+
+    .owner-box {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .owner-image {
         flex: 1 1 100%;
     }
-    .stats {
-        flex-wrap: wrap;
+
+    .owner-image img {
+        height: auto;
+        max-height: 400px;
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .owner-details {
+        flex: 1 1 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .owner-details h3 {
+        font-size: 20px;
+    }
+
+    .owner-details p {
+        font-size: 14px;
+    }
+
+    /* Achievement Section */
+    .achievement-section {
+        padding: 40px 20px;
+    }
+
+    .achievement-container {
+        flex-direction: column;
         gap: 20px;
+        text-align: center;
+    }
+
+    .achievement-left, .achievement-right {
+        flex: 1 1 100%;
+    }
+
+    .achievement-left h2,
+    .achievement-right h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .ach-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ach-dots {
+        justify-content: center;
+    }
+
+    .achievement-right li {
+        font-size: 14px;
+    }
+        header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ .timeline::after {
+        left: 20px; 
+        transform: none; 
+    }
+
+    .timeline-item {
+        width: 100%;
+        text-align: left !important;
+        padding-left: 60px; 
+        padding-right: 20px;
+        left: 0 !important;
+    }
+
+    .timeline-item::before {
+        left: 20px !important; 
+        transform: none;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0 !important; 
+        text-align: left !important; 
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: row; /* Keep logo and button on the same line */
+        justify-content: space-between;
+        align-items: center;
+        position: fixed; /* Keep header fixed */
+        width: 100%;
+        top: 0;
+        z-index: 100;
+    }
+
+    /* Show hamburger menu button */
+    .menu-btn {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        z-index: 110;
+    }
+
+    /* Hide nav by default */
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #020824;
+        position: fixed;
+        top: 60px;  /* Just below the header */
+        left: 0;
+        padding: 10px 0;
+        gap: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        border-top: 1px solid #333;
+        z-index: 105;
+    }
+
+    /* Show nav when toggled */
+    nav.show {
+        display: flex;
+    }
+
+    /* Nav links styling */
+    header nav a {
+        margin: 10px 20px;
+        font-weight: 700;
+        color: white;
+        display: block;
+        text-align: center;
+    }
+
+    /* Logo sizing */
+    .logo img {
+        height: 50px;
+        width: 65px;
+    }
+
+    .logo span {
+        font-size: 20px;
     }
 }
