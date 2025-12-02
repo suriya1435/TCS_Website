@@ -411,3 +411,22 @@ header nav a:hover{
         gap: 20px;
     }
 }
+
+/* Desktop Default */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+}
+
