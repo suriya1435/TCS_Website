@@ -236,20 +236,12 @@ section:nth-child(even) {
 }
 
 /* ===== Responsive ===== */
+/* ===== Responsive FIXED ===== */
 @media(max-width:768px) {
+
   header {
     padding: 10px 15px;
-    flex-wrap: wrap; /* logo + button wrap */
     justify-content: space-between;
-  }
-
-  .logo img {
-    height: 50px;
-    width: 65px;
-  }
-
-  .logo span {
-    font-size: 20px;
   }
 
   .menu-btn {
@@ -257,18 +249,15 @@ section:nth-child(even) {
   }
 
   nav {
-    display: none; /* hidden by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     background-color: #020824;
     position: absolute;
-    top: 60px; /* below header */
+    top: 60px;
     left: 0;
     padding: 10px 0;
-    gap: 0;
     border-top: 1px solid #333;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    z-index: 105;
   }
 
   nav.show {
@@ -276,45 +265,91 @@ section:nth-child(even) {
   }
 
   nav a {
-    display: block;
-    width: 100%;
     text-align: center;
-    padding: 12px 0;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
+    padding: 14px 0;
   }
 
-  nav a:hover {
-    color: lightblue;
-    background: rgba(255,255,255,0.1);
+  .future-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .future-text, 
+  .text-box {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7;
+  }
+
+  .future-text h2,
+  section h2 {
+    font-size: 26px;
+  }
+
+  .future-image img {
+    width: 75%;
+    height: auto;
+  }
+
+  /* Fix section layout */
+  section {
+    flex-direction: column !important;
+    text-align: center;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  section .img-logo {
+    width: 250px;
+    height: auto;
   }
 
   .items-container {
     grid-template-columns: 1fr;
     width: 90%;
+    margin: auto;
   }
 
-  section {
-    flex-direction: column !important;
-    text-align: center;
-    width: 95%;
+  /* Buttons aligned properly */
+  .btn {
+    margin: 10px auto 0;
+    display: inline-block;
   }
 
-  .future-box {
-    flex-direction: column;
-  }
-
-  .future-image img {
-    height: 300px;
-  }
-
+  /* Footer Fix */
   .footer-container {
     flex-direction: column;
     text-align: center;
+    gap: 25px;
   }
 
-  .footer-logo img {
-    width: 60px; /* smaller on mobile */
+  .footer-col ul li {
+    text-align: center;
   }
+}
+
+
+@media(max-width:768px) {
+
+  p,
+  .future-text p,
+  .text-box p,
+  .space-text p,
+  .company-text p,
+  .future-focus p,
+  .strength p,
+  .company-section p {
+      text-align: left !important;
+      padding: 0 12px; /* spacing so text doesn't touch screen edges */
+      line-height: 1.7;
+  }
+
+  h1, h2 {
+      text-align: left !important;
+      padding: 0 12px;
+  }
+
 }
