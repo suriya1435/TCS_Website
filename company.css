@@ -84,9 +84,9 @@ nav a:hover {
 }
 
 .future-image img {
-  width: 100%;
-  border-radius: 50%;
-  height: 400px;
+  width: 90%;
+  border-radius: 30%;
+  height: 350px;
   object-fit: cover;
 }
 
