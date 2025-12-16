@@ -509,8 +509,5 @@ header nav a:hover{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
+   
 }
