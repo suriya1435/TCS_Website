@@ -383,13 +383,13 @@ header nav a:hover{
 .footer {
     background: #1d1d26;
     color: #e7e7e7;
-    padding: 60px 50px 20px;
+    padding: 30px 50px 10px; /* reduced top & bottom */
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px; /* reduced from 40px */
     justify-content: space-between;
 }
 
@@ -398,11 +398,11 @@ header nav a:hover{
     margin-bottom: 5px;
     border-radius: 20px;
 }
-
 .footer-col h3 {
     color: white;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 6px; /* reduced */
+    font-size: 16px; /* slightly smaller */
+    line-height: 1.2;
 }
 
 .footer-col ul {
@@ -410,15 +410,17 @@ header nav a:hover{
 }
 
 .footer-col ul li {
-    margin-bottom: 8px;
+    margin-bottom: 4px; /* reduced spacing */
     color: #c5c5c5;
+    font-size: 14px;
+    line-height: 1.4;
 }
-.footer-col ul li a{
-    margin-left:20px;
-	color:white;
-	font-weight:200;
-	transition:0.5;
-	text-decoration: none;
+
+.footer-col ul li a {
+    margin-left: 0; /* REMOVE extra left spacing */
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .footer-bottom {
