@@ -394,9 +394,9 @@ header nav a:hover{
 }
 
 .footer-logo img {
-    width: 150px;
+    width: 110px; /* smaller */
     margin-bottom: 5px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .footer-col h3 {
     color: white;
@@ -425,10 +425,10 @@ header nav a:hover{
 
 .footer-bottom {
     text-align: center;
-    padding: 20px 0 0;
+    padding: 10px 0 0; /* reduced */
     border-top: 1px solid #3b3b3b;
-    margin-top: 40px;
-    font-size: 14px;
+    margin-top: 20px; /* reduced */
+    font-size: 13px;
     color: #888;
 }
 
