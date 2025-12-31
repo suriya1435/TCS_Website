@@ -51,9 +51,10 @@ header p {
 
 /* MENU ICON */
 .menu-btn {
-    font-size: 26px;
+    display: none;
+    font-size: 28px;
     cursor: pointer;
-    margin: 10px 0;
+    color: #fff;
 }
 
 /* NAVIGATION */
@@ -161,8 +162,7 @@ nav a:hover {
     <h1>The Madras Silks™</h1>
     <p>Vendor Portal – Privacy Policy (Public Forum)</p>
 
-    <!-- MENU ICON (visual only, like screenshot) -->
-    <div class="menu-btn">☰</div>
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
 
     <nav>
         <a href="index.html">Home</a>
@@ -173,13 +173,13 @@ nav a:hover {
         <a href="contact.html">Contact Us</a>
     </nav>
 </header>
-
-
 <script>
 function toggleMenu(){
     document.getElementById("menu").classList.toggle("show");
 }
 </script>
+
+
 </header>
 
 <div class="container">
@@ -294,6 +294,7 @@ function toggleMenu(){
 
 </body>
 </html>
+
 
 
 
