@@ -227,68 +227,82 @@ header nav a:hover{
 }
 
 
-/* BRANDS */
+/* BRANDS SECTION */
 .brands {
-    padding: 60px 50px;
-    background: skyblue;
-    color: white;
-    overflow: hidden;
+    padding: 60px 40px;
+    background: #fff;
+    position: relative;
 }
 
 .brands h2 {
     text-align: center;
     font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+    margin-bottom: 40px;
 }
 
-/* MOVING LINE */
+/* SLIDER */
+.brand-slider {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+}
+
 .brand-track {
     display: flex;
-    gap: 30px;
-    animation: scrollBrands 20s linear infinite;
-    width: max-content;
-}
-
-.brands:hover .brand-track {
-    animation-play-state: paused;
-}
-
-@keyframes scrollBrands {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
+    transition: transform 0.6s ease-in-out;
 }
 
 .brand-box {
-    min-width: 180px;
-    background: white;
-    color: black;
+    min-width: 20%;
     text-align: center;
-    padding: 15px 10px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.brand-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
 
 .brand-box img {
-    width: 120px;
-    margin-bottom: 8px;
+    max-width: 160px;
+    max-height: 80px;
+    object-fit: contain;
 }
 
-.brand-box p {
-    font-size: 14px;
-    font-weight: 500;
+/* ARROWS */
+.brand-arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+    user-select: none;
 }
+
+.brand-arrow.left { left: 20px; }
+.brand-arrow.right { right: 20px; }
+
+/* DOTS */
+.brand-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.brand-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.brand-dots .active {
+    background: #333;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .brand-box {
+        min-width: 50%;
+    }
+}
+
 
 
 /* COMPANIES */
