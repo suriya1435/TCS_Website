@@ -108,56 +108,17 @@ function toggleMenu(){
 
 <!-- BRANDS -->
 <section class="brands">
-    <h2>Prestigious Brands</h2>
-
-    <div class="brand-arrow left" onclick="moveSlide(-1)">‹</div>
-    <div class="brand-arrow right" onclick="moveSlide(1)">›</div>
-
-    <div class="brand-slider">
-        <div class="brand-track" id="brandTrack">
-            <div class="brand-box"><img src="image/src/aurora.png"></div>
-            <div class="brand-box"><img src="image/src/mangaiya.png"></div>
-            <div class="brand-box"><img src="image/src/pure.png"></div>
-            <div class="brand-box"><img src="image/src/tanujaa.png"></div>
-            <div class="brand-box"><img src="image/src/tinystars.png"></div>
-
-            <!-- duplicate for smooth loop -->
-            <div class="brand-box"><img src="image/src/aurora.png"></div>
-            <div class="brand-box"><img src="image/src/mangaiya.png"></div>
-            <div class="brand-box"><img src="image/src/pure.png"></div>
-            <div class="brand-box"><img src="image/src/tanujaa.png"></div>
-            <div class="brand-box"><img src="image/src/tinystars.png"></div>
-        </div>
-    </div>
-
-    <div class="brand-dots" id="brandDots">
-        <span class="active"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+ 	<h2>Prestigious Brands</h2>
+ 		<div class="brand-grid">
+			 <div class="brand-box">
+					<img src="image/src/Screenshot 2025-11-22 155527.png"><p>The Madras Silks</p>
+			</div> 
+			<div class="brand-box"><img src="image/src/sree_kumaran.png"><p>Sree Kumaran Thangamaligai</p></div> 
+			<div class="brand-box"><img src="image/src/space_energy.png"><p>Space Energy Division</p></div> 
+			<div class="brand-box"><img src="image/src/Screenshot 2025-11-22 155527.png"><p>Vikkys</p></div> 
+			<div class="brand-box"><img src="image/src/Screenshot 2025-11-22 155527.png"><p>Dance Academy</p></div> 
+		</div> 
 </section>
-<script>
-let index = 0;
-const track = document.getElementById("brandTrack");
-const dots = document.querySelectorAll(".brand-dots span");
-
-function moveSlide(step) {
-    index += step;
-    if (index < 0) index = dots.length - 1;
-    if (index >= dots.length) index = 0;
-    updateSlider();
-}
-
-function updateSlider() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-    dots.forEach(d => d.classList.remove("active"));
-    dots[index].classList.add("active");
-}
-
-/* AUTO SLIDE */
-setInterval(() => moveSlide(1), 3500);
-</script>
 
 
 
