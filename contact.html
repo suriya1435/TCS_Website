@@ -10,14 +10,17 @@
 </head>
 	<script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-	</script>
-	<script type="text/javascript">
-	   (function(){
-		  emailjs.init({
-			publicKey: "rhZtsYtL-chz0Ezcm",
-		  });
-	   })();
-	</script>
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "rhZtsYtL-chz0Ezcm",
+      });
+   })();
+</script>
+
+</script>
+
 	<script src="script.js"></script>
 	
 <body>
@@ -37,7 +40,7 @@
         <a href="abouus.html">About Us</a>
         <a href="company.html">Companies</a>
         <a href="latest.html">Latest News</a>
-        <a href="files/csr-policy-spacetextiles.pdf">CSR Policy</a>
+        <a href="policy page.html">CSR Policy</a>
         <a href="contact.html">Contact Us</a>
     </nav>
 </header>
@@ -47,67 +50,103 @@ function toggleMenu(){
     document.getElementById("menu").classList.toggle("show");
 }
 </script>   
-    <div class="contact-container">
-        <h2>Contact Us</h2>
-        <p class="subtext">Feel free to reach out to us. We are happy to help!</p>
+    
 
-        <div class="contact-box">
 
-            <form action="#" method="post">
-                <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" id ="name" placeholder="Enter your name" required>
-                </div>
+<section class="contact-container">
 
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" id ="email" placeholder="Enter your email" required>
-                </div>
+    <!-- LEFT SECTION -->
+    <div class="contact-info">
+        <h2>CONTACT US</h2>
 
-                <div class="input-group">
-                    <label>Phone Number</label>
-                    <input type="text" id="phone_number"placeholder="Enter your phone number">
-                </div>
-
-                <div class="input-group">
-                    <label>Message</label>
-                    <textarea id ="message" rows="5" placeholder="Write your message..." required></textarea>
-                </div>
-                
-                <button type="button" onclick="sendMail()">Send Message</button>
-            </form>
-
-            <div class="contact-info">
-                <h3>Contact Details</h3>
-                <p><strong>📍 Address:</strong> Crescent Inovation and Incubation Council, GST Road, Vandalur Chennai-60048.</p>
-                <p><strong>📞 Phone:</strong> +91 8838751960</p>
-                <p><strong>✉ Email:</strong> suriyav040@gmail.com</p>
-
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.560339258337!2d80.0816377745451!3d12.871649217062789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f791aeb9fff3%3A0x92b8e9d70ae5880b!2sCrescent%20Innovation%20%26%20Incubation%20Council%20(CIIC)!5e0!3m2!1sen!2sin!4v1764465457235!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
+        <div class="info-box">
+            <h4>📞 Phone Support</h4>
+            <p>+91 99406 20350</p>
+            <p>10 AM – 1 PM & 2 PM – 7 PM<br>Monday – Sunday</p>
         </div>
+
+        <div class="info-box">
+            <h4>✉️ Email Support</h4>
+            <p>crm@yourcompany.com</p>
+            <p>We respond within 24 hours</p>
+        </div>
+
+        <div class="info-box">
+            <h4>💬 Live Chat</h4>
+            <p>Available on website</p>
+            <p>10 AM – 7 PM</p>
+        </div>
+
+        <p class="note">
+            There’s no question too small. Our support team is always happy to help.
+        </p>
     </div>
 
+    <!-- RIGHT SECTION -->
+<div class="contact-form">
+    <h2>SEND US AN EMAIL</h2>
 
-<!-- FOOTER -->
+    
+        <label for name="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required>
+        <label for name="email">Email</label>
+        <input type="email" id="email" placeholder="Your email" required>
+        <label for name="phone">Phone Number</label>
+        <input type="text" id="phone_number" placeholder="Phone number">
+        <label for name="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Subject">
+        <label for name="message">Message</label>
+        <textarea id="message" placeholder="Your message (optional)"></textarea>
+        <button type="submit" onclick="sendMail()">SUBMIT</button>
+    
+</div>
+
+
+</section>
+
+<!-- LOCATIONS -->
+<section class="locations">
+
+    <div class="location">
+        <h3>T-NAGAR</h3>
+        <p>55, N Usman Rd, T Nagar, Chennai</p>
+        <p>📞 044 2431 0888</p>
+        <iframe src="https://www.google.com/maps?q=T%20Nagar%20Chennai&output=embed"></iframe>
+    </div>
+
+    <div class="location">
+        <h3>VELACHERY</h3>
+        <p>Velachery – Tambaram Main Road, Chennai</p>
+        <p>📞 044 2241 0888</p>
+        <iframe src="https://www.google.com/maps?q=Velachery%20Chennai&output=embed"></iframe>
+    </div>
+
+    <div class="location">
+        <h3>CHROMEPET</h3>
+        <p>GST Road, Chromepet, Chennai</p>
+        <p>📞 044 2265 0888</p>
+        <iframe src="https://www.google.com/maps?q=Chromepet%20Chennai&output=embed"></iframe>
+    </div>
+
+</section>
+<!-- Footer -->
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="image\src\Screenshot 2025-11-22 155527.png" alt="The Madras Silks">
-            <p>The Madras Silks</p>
+            <img src="image/src/Screenshot 2025-11-22 155527.png" alt="The Madras Silks">
+            <p>The Chennai Silks</p>
         </div>
+
         <div class="footer-col">
             <h3>Our Companies</h3>
             <ul>
-                <li><a href="https://apdeops.com/">The Madras Silks</a></li>
-                <li><a href ="#">Sree Kumaran Thangamaligai</a></li>
-                <li><a href = "#">Space Energy Division</a></li>
+                <li><a href="https://apdeops.com/">The Chennai Silks</a></li>
+                <li><a href="#">Sree Kumaran Thangamaligai</a></li>
+                <li><a href="#">Space Energy Division</a></li>
                 <li><a href="#">The Chennai Super Bazaar</a></li>
             </ul>
         </div>
+
         <div class="footer-col">
             <h3>Our Companies</h3>
             <ul>
@@ -117,15 +156,17 @@ function toggleMenu(){
                 <li><a href="#">Sri Nachakids Play School</a></li>
             </ul>
         </div>
+
         <div class="footer-col">
             <h3>Contact Us</h3>
             <ul>
-                <li>Crescent Inovation and Incubation Council, GST Road, Vandalur Chennai-60048.</li>
+                <li>Crescent Innovation and Incubation Council, GST Road, Vandalur, Chennai-600048</li>
                 <li>Phone: 8838751960</li>
                 <li>Email: support@apdeops.com</li>
             </ul>
         </div>
     </div>
+
     <div class="footer-bottom">
         © 2025 Apdeops Technology. All Rights Reserved.
     </div>

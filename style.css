@@ -35,7 +35,7 @@ header{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	background:linear-gradient(to bottom,#7a1f1f,#5b1b1b,#2b0f0f);
+	background:#6A2C3C;
 	color:#fff;
 	color:#fff;
 	position:fixed;
@@ -227,41 +227,58 @@ header nav a:hover{
 }
 
 
-/* BRANDS */ .brands {
-	padding: 60px 50px; 
-	background: skyblue; 
+/* BRANDS */
+.brands {
+	padding: 10px 10px;
+	background: skyblue;
 	color: white;
-} 
-.brand-grid { 
+    border-radius: 55px;
+}
+
+.brand-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-	gap: 25px; margin-top: 30px;
-} .brand-box {
-	background: white; 
-	color: black; 
+	gap: 15px;
+	margin-top: 20px;
+	align-items: center;
+    
+}
+
+/* REMOVE BOX STYLING */
+.brand-box {
+	background: transparent;
+	box-shadow: none;
+	padding: 0;
+	border-radius: 0;
 	text-align: center;
-	padding: 10px;
-	border-radius: 12px; 
-	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-	transition: transform 0.35s ease, box-shadow 0.35s ease;
+	transition: transform 0.3s ease;
 }
-.brand-box:hover { 
-	transform: translateY(-10px) scale(1.05);
-	box-shadow: 0 12px 28px rgba(0,0,0,0.18);
-} 
+
+.brand-box:hover {
+	transform: scale(1.1);
+}
+
+/* IMAGE ONLY */
 .brand-box img {
-	width: 120px; 
-	margin-bottom: 5px; 
+	width: 140px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
+
+/* Optional: brand name */
 .brand-box p {
 	font-size: 14px;
 	font-weight: 500;
+	margin-top: 8px;
+	color: #000;
 }
-.brands h2 { 
-	text-align: center; 
-	font-size: 28px; 
+
+.brands h2 {
+	text-align: center;
+	font-size: 28px;
 	font-weight: 600;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
 	letter-spacing: 1px;
 }
 
