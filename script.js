@@ -2,7 +2,7 @@ function sendMail(){
     let parms ={
         name : document.getElementById("name").value,
         email : document.getElementById("email").value,
-        phone : document.getElementById("phone_number").value,
+        phone_number : document.getElementById("phone_number").value,
         subject: document.getElementById("subject").value,
         message: document.getElementById("message").value,
     }
