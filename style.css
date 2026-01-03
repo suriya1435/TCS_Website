@@ -29,18 +29,19 @@ nav.show {
     display: block;
 }
 
-header{
-	width:100%;
-	padding:10px 50px;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	background: #020824;
-	color:#fff;
-	color:#fff;
-	position:fixed;
-	top: 0;
-    z-index: 100;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;                
+    padding: 0 50px;
+    display: flex;
+    align-items: center;          
+    justify-content: space-between;
+    background: #020824;
+    color: #fff;
+    z-index: 1000;
 }
 
 header nav a{
@@ -102,16 +103,16 @@ header nav a:hover{
 }
 
 .hero {
-    margin-top: 90px;              /* header height */
+    margin-top: 90px;              
     width: 100%;
-    height: calc(100vh - 90px);    /* FULL screen minus header */
+    height: calc(100vh - 90px);    
     overflow: hidden;
 }
 
 .hero img {
     width: 100%;
     height: 100%;
-    object-fit: cover;             /* fills screen without distortion */
+    object-fit: cover;             
     display: block;
 }
 
@@ -311,6 +312,7 @@ header nav a:hover{
 }
 
 /* COMPANIES */
+/* COMPANIES */
 .company-section {
     padding: 50px;
 }
@@ -319,8 +321,10 @@ header nav a:hover{
     display: flex;
     gap: 40px;
     background: #90d4ef;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 40px;
+    border-radius: 30px;
+    align-items: center;      /* ✅ vertical alignment */
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -329,25 +333,29 @@ header nav a:hover{
 }
 
 .company-text h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .company-text p {
     font-size: 16px;
-    margin-bottom: 10px;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: #222;
 }
 
 .company-image {
     flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
 }
 
 .company-image img {
-    width: 100%;
-    border-radius: 15px;
+    width: 100%;             /* ✅ full container */
+    max-width: 320px;        /* ✅ controlled size */
+    border-radius: 20px;
 }
+
 
 /* FUTURE FOCUS */
 .future-focus {
