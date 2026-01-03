@@ -122,13 +122,17 @@ header nav a:hover{
 @media (max-width: 768px) {
     .hero {
         margin-top: 70px;
-        height: calc(100vh - 70px);
+        height: 45vh;                /* ✅ perfect mobile size */
     }
 
     .hero img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }
+
+
 
 
 .welcome-text h3 {
